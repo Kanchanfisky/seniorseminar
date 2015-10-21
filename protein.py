@@ -16,11 +16,11 @@ X_train_set = np.loadtxt(inputFile,dtype="float32")
 Y_train_set=np.loadtxt(outputFile, dtype="float32")
 
 cutoff=int((X_train_set.size/X_train_set[0].size)*0.1)
-print cutoff
+print cutoff # value of cutoff is 2417
 
 
 X_train = X_train_set[0:cutoff,:]
-X_test = X_train_set[cutoff:2*cutoff,:]
+X_test = X_train_set[cutoff:2*cutoff,:] # size is 2417
 #X_validate= X_train_set[15000:20000,:]
 
 Y_train = Y_train_set[0:cutoff,:]
@@ -49,7 +49,7 @@ Y_example= nn.predict(X_test)
 np.savetxt("Y_example_prediction.out",Y_example)
 
 diff= np.logical_and(Y_test,Y_example).sum()
-print diff
+print diff # output was 1630
 #import pickle
 #pickle.dump(nn, open('nn.pkl', 'wb'))
 

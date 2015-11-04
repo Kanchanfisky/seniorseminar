@@ -5,19 +5,6 @@ Created on Tue Nov 03 17:06:48 2015
 @author: kanchan
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 28 11:21:33 2015
-
-@author: kanchan
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 21 11:00:34 2015
-
-@author: kanchan
-"""
 
 from sknn.mlp import Classifier, Layer
 import numpy as np

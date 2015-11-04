@@ -63,7 +63,7 @@ nn = Classifier(
         Layer("Sigmoid", units=200),
         Layer("Sigmoid")],
     learning_rate=0.001,
-    n_iter=500,verbose=True)
+    n_iter=100,verbose=True)
 
 
 print "lets make data fit"
